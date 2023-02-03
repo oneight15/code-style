@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Style CSS</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <article class="article">
+      <h1 class="title">Code Style CSS</h1>
+      <p class="subtitle">Хороший код — это код который удобно читать и поддерживать.</p>
+      <p class="list-title">Хороший код должен быть простым:</p>
+      <ul class="list-css">
+        <li class="list-item">используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему применяются стили.</li>
+        <li class="list-item">классы пишите в нижнем регистре (строчными буквами).</li>
+        <li class="list-item">вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее подчеркивание и camelCase.</li>
+        <li class="list-item">код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и пробелы, один стиль записи цветов и псевдоэлементов.</li>
+      </ul>
+      
+      <figure class="img-wrapper">
+        <figcaption class="sign">плохо</figcaption>
+        <img class="css-img bad-css" src="../img/bad-css.png" alt="">
+      </figure>
+      <figure class="img-wrapper">
+        <figcaption class="sign">хорошо</figcaption>
+        <img class="css-img good-css" src="../img/good-css.png" alt="">
+      </figure>
+
+      <p class="list-title">Оформляем блок со свойствами:</p>
+      <ul class="list-css">
+        <li class="list-item">после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».</li>
+        <li class="list-item">в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.</li>
+        <li class="list-item">после двоеточия ставьте «пробел».</li>
+        <li class="list-item">обязательно ставить «точку с запятой» в конце свойства.</li>
+        <li class="list-item">ставьте закрывающую «фигурную скобку» на новой строке.</li>
+      </ul>
+
+      <figure class="advice">
+        <figcaption class="sign">Между набором правил оставляйте одну пустую строку:</figcaption>
+        <img class="rules" src="../img/css-rules.png" alt="Пример правильно оформления правил CSS">
+      </figure>
+
+      <p class="advice">Все стили пишем через селектор класса. Теги используем только для глобальных стилей, id в стилях не используем.</p>
+      <p class="advice">Избегайте использование !important.</p>
+      <p class="advice">Псевдокласс nth-child используем только со значениями even и odd. В остальных случая используем дополнительный класс.</p>
+      <p class="advice">Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ. <br> Плохо: .block .faq .title <br> Хорошо: .faq .title</p>
+      <p class="advice">При использовании БЭМ вложенность не используется.</p>
+      <p class="advice">Обязательно указывайте альтернативный вид и тип семейства шрифтов.</p>
+      <p class="advice">Проверяйте вёрстку на переполнение.</p>
+      <p class="advice">У интерактивных элементов обязательны стили состояний: hover, focus, active, disabled. </p>
+      <p class="advice">Если используете свойство display: inline-block, обязательно добавляйте свойство vertical-align.</p>
+      <p class="advice">Свойство position используем в крайнем случае. Исключение: если иначе сделать невозможно или сложно.</p>
+      <p class="advice">У нулевых значений не нужно писать единицы измерения. Когда значение 0, то не важно это px, % или попугайчики.</p>
+      <p class="advice">Значения цвета hex пишем в нижнем регистре.</p>
+      <p class="advice">Проверяйте css в валидаторе — https://jigsaw.w3.org/css-validator/</p>
+
+      <section>
+        <h2>Дополнительно</h2>
+        <p>В названиях файлов и папок используйте только латиницу и буквы в нижнем регистре, без пробелов. Для разделения слов используйте «дефис» или нижние подчёркивание. </p>
+      </section>
+
+
+
+      <div class="link-wrapper">
+        <a class="link link-html" href="../index.html">На главную</a>
+        <a class="link link-css" href="code-style-html.html">Code Style HTML</a>
+  
+      </div>
+      
+      
+      
+    </article>
+  </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,12 +27,20 @@
 
       <section class="section">
         <h2 class="section-title">Кодировка символов документа</h2>
-        <p class="section-subtitle">Кодировка символов на странице всегда должна быть явно указана, чтобы обеспечить корректное отображение текста. Для Кириллицы нужно использовать UTF-8 кодировку, убедитесь что ваш документ так же имеет кодировку UTF-8</p>
+        <p class="section-subtitle">Кодировка символов на странице всегда должна быть явно указана, чтобы обеспечить корректное отображение текста.</p>
+        <figure>
+          <figcaption class="sign">Для Кириллицы нужно использовать UTF-8 кодировку, убедитесь что ваш документ так же имеет кодировку UTF-8</figcaption>
+          <img class="charset" src="../img/charset.png" alt="Пример правильного использования кодировки в документе и редакторе кода">
+        </figure>
       </section>
 
       <section class="section">
         <h2 class="section-title">Базовый синтаксис</h2>
-        <p class="section-subtitle">Теги и их атрибуты пишутся строчными буквами. Для значений атрибутов всегда используются двойные кавычки. Для отступов у вложенных элементов используется отступ в 2 пробела (или табуляция размером 2 пробела).</p>
+        <p class="section-subtitle">Теги и их атрибуты пишутся строчными буквами. Для значений атрибутов всегда используются двойные кавычки.</p>
+        <figure>
+          <figcaption class="sign">Для отступов у вложенных элементов используется отступ в 2 пробела (или табуляция размером 2 пробела).</figcaption>
+          <img class="spaces" src="../img/spaces.png" alt="Пример использования одинаковых отступов при написании разметки страницы">
+        </figure>
       </section>
 
       <section class="section">
@@ -42,22 +50,31 @@
 
       <section class="section">
         <h2 class="section-title">Подключение стилей</h2>
-        <p class="section-subtitle">Файл стилей подключается с помощью тега &lt;link&gt; внутри тега &lt;head&gt;. Обязательный атрибут rel - со значением stylesheet, иначе браузер не поймет что вы подключили. Атрибут type="text/css” писать не нужно в современной версии HTML</p>
+        <p class="section-subtitle">Файл стилей подключается с помощью тега &lt;link&gt; внутри тега &lt;head&gt;. Обязательный атрибут rel - со значением stylesheet, иначе браузер не поймет что вы подключили.</p>
+        <figure>
+          <figcaption class="sign">Атрибут type="text/css” писать не нужно в современной версии HTML</figcaption>
+          <img class="link-style" src="../img/link-style.png" alt="Пример правильного подключения стилей по современным стандартам">
+        </figure>
       </section>
 
       <section class="section">
         <h2 class="section-title">Атрибуты</h2>
         <p class="section-subtitle">Атрибут класса у HTML-элементов пишется первым. Так проще распознать его, остальные атрибуты можно указывать в любом порядке, но желательно чтобы их порядок от элемента к элементу сохранялся. Для логических атрибутов, таких как checked, disabled, required и тд, значение не указывается</p>
           <section>
-            <h3>ALT - атрибут</h3>
-            <p>Обязательно нужно указывать атрибут alt у тега img, чтобы было чем его "заменить" если вдруг изображение не загрузилось Так же значение alt атрибута очень важно, для людей использующих вспомогательные технологии, например экранные читалки, они не видят интерфейс, а "читают" сайты с помощью экранного диктора. Программа зачитывает для них alt атрибут чтобы было понятно что на изображении.</p>
+            <h3 class="data-title">ALT - атрибут</h3>
+            <p class="section-subtitle">Обязательно нужно указывать атрибут alt у тега img, чтобы было чем его "заменить" если вдруг изображение не загрузилось Так же значение alt атрибута очень важно, для людей использующих вспомогательные технологии, например экранные читалки, они не видят интерфейс, а "читают" сайты с помощью экранного диктора. Программа зачитывает для них alt атрибут чтобы было понятно что на изображении.</p>
           </section>
       </section>
 
-      <section class="section">
+      <section class="section valid">
         <h2 class="section-title">Валидность HTML</h2>
-        <p class="subtitle">Документ должен проходить проверку на валидность HTML. Для проверки используется [в](https://validator.w3.org/)алидатор w3c [https://validator.w3.org/#validate_by_input](https://validator.w3.org/#validate_by_input)</p>
+        <p class="subtitle">Документ должен проходить проверку на валидность HTML. Для проверки используется <a class="link-valid" href="https://validator.w3.org/" target="_blank">в</a>алидатор w3c <a class="link-valid" href="https://validator.w3.org/#validate_by_input" target="_blank">https://validator.w3.org/#validate_by_input</a></p>
       </section>
+      <div class="link-wrapper">
+        <a class="link link-html" href="../index.html">На главную</a>
+        <a class="link link-css" href="code-style-css.html">Code Style CSS</a>
+  
+      </div>
     </article>
   </div>
 </body>

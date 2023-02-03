@@ -1,9 +1,9 @@
-.data-title {
-  margin-bottom: 10px;
+.sign {
+  margin-bottom: 25px;
 }
 
-.data-subtitle {
-  
+.data-title {
+  margin-bottom: 10px;
 }
 
 .data-subtitle::before {
@@ -13,4 +13,24 @@
   height: 85px;
   background-color: #000000;
   margin-right: 15px;
+}
+
+.charset {
+  width: 500px;
+}
+
+.spaces {
+  width: 800px;
+}
+
+.link-style {
+  width: 650px;
+}
+
+.link-valid {
+  color: #808080;
+}
+
+.valid {
+  max-width: 500px;
 }

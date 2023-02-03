@@ -10,6 +10,16 @@ body {
   line-height: 1.2;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -43,7 +53,7 @@ body {
   margin-bottom: 10px;
 }
 
-.final {
+.advice {
   margin-bottom: 25px;
 }
 
@@ -51,6 +61,8 @@ body {
   max-width: 350px;
   height: 80px;
   margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
 .link {
