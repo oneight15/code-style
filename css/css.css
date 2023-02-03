@@ -17,16 +17,13 @@
 }
 
 .img-wrapper {
-  border: 1px solid transparent;
+  display: inline-block;
   margin-bottom: 40px;
+  margin-right: 50px;
 }
 
-.img-wrapper:nth-child(odd) {
-  float: left;
-}
-
-.img-wrapper:nth-child(even) {
-  float: right;
+.img-wrapper:last-child {
+  margin-right: 0;
 }
 
 .css-img {
